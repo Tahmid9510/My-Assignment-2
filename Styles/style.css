@@ -66,6 +66,9 @@
 /* responsive media query */
 
 @media screen and (max-width: 393px){
+    .header{
+    margin:auto;
+    }
     .nav-link{
         flex-direction: column;
     }
@@ -76,7 +79,7 @@
         display: none;
     }
     .banner-image img{
-    max-width: 390px;
+        width: 390px;
     }
     .navbar img{
         max-width: 70px;
