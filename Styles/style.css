@@ -1,3 +1,4 @@
+
 /* shared style  */
 .display-flex{
     display: flex;
@@ -65,7 +66,7 @@
 
 /* responsive media query */
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 400px){
     .header{
     margin:auto;
     }
@@ -79,7 +80,7 @@
         display: none;
     }
     .banner-image img{
-        width: 390px;
+        width: 100%;
     }
     .navbar img{
         max-width: 70px;
