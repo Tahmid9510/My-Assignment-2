@@ -1,4 +1,12 @@
-
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+ html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /* shared style  */
 .display-flex{
     display: flex;
@@ -11,6 +19,14 @@
 }
 .text-gray{
     color: rgba(0, 0, 0, 0.5);
+}
+.btn-primary{
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    padding: 19px 80px;
+    font-size: 1.03rem;
+    font-weight: 600;
+    border: none;
 }
 /* header style */
 .header{
@@ -55,7 +71,6 @@
 }
 .banner-content{
     max-width: 520px;
-    /* margin-right: 100px; */
 }
 .banner-image{
     max-width: 620px;
@@ -64,9 +79,51 @@
     width: 620px;
 }
 
-/* responsive media query */
+/* Main Style */
 
-@media screen and (max-width: 400px){
+/* Plants section style */
+.plants{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plants-title{
+ text-align: center;
+ font-size: 3.125rem;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+.plants-description{
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.cart{
+    width: 270px;
+    height: 485px;
+    margin-bottom: 30px;
+}
+.cart-text{
+    font-size: 1.375rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cart-price{
+    font-size: 1.375rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+.plants-carts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*--------------------- responsive media query ---------------------------*/
+
+@media screen and (max-width: 550px){
     .header{
     margin:auto;
     }
@@ -74,6 +131,7 @@
         flex-direction: column;
     }
     .banner{
+        display: flex;
         flex-direction: column-reverse;
     }
     .list123{
@@ -91,12 +149,56 @@
     }
     .banner-title{
     font-size: 1.5em;
-    font-weight: bold;
     margin-top: 28px;
     margin-bottom: 0;
     }
     .banner-text{
     font-size: 0.875rem;
     }
+    .plants-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    }
+    .cart-text{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    }
+
+
+    .cart{
+    width: 170px;
+    height: 340px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .cart img{
+        width: 100%;
+        height: auto;
+    }
+    .cart-text{
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .cart-price{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .plants-carts{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0;
+    }
+    .cart-button{
+    padding: 19px 30px;
+    font-size: 1rem;
+    }
+    .plants{
+    max-width: 1140px;
+    margin: 0;
+}
 }
 
