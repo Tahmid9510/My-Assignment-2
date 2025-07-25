@@ -1,12 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
- html,body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+
 /* shared style  */
 .display-flex{
     display: flex;
@@ -20,11 +12,14 @@
 .text-gray{
     color: rgba(0, 0, 0, 0.5);
 }
-
+ html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .btn-primary{
     background-color: rgba(233, 90, 8, 1);
     color: white;
-    padding: 19px 80px;
+    padding: 19px 75px;
     font-size: 1.03rem;
     font-weight: 600;
     border: none;
@@ -270,9 +265,6 @@
     display: flex;
 }
 /* Footer Style */
-/* .footer{
-    background-color: rgb(209, 191, 191);
-} */
 .Div-footer{
     padding: 50px 150px;
     display: flex;
@@ -300,6 +292,19 @@
     width: 10%;
     height: 10%;
 }
+/* Animation  */
+ .trusted-badge{
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
 /*--------------------- responsive media query ---------------------------*/
 
 @media screen and (max-width: 550px){
