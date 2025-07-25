@@ -65,7 +65,7 @@
     font-weight: 500;
 }
 .banner-title{
-    font-size: 4.0625em;
+    font-size: 4.0625rem;
     font-weight: bold;
     margin-top: 140px;
     margin-bottom: 0;
@@ -248,7 +248,8 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    color: white;  
+    color: white; 
+    margin-top: 120px; 
 }
 .join-brunch-title{
     font-size: 3.125rem;
@@ -257,14 +258,47 @@
 }
 .email-input{
     width: 640px;
-    height: 50px;
+    height: 55px;
     margin-right: 0;
+    border: 0;
+    border-radius: 0;
 }
 .btn-subs{
     margin-right: 0;
 }
 .input-form{
     display: flex;
+}
+/* Footer Style */
+/* .footer{
+    background-color: rgb(209, 191, 191);
+} */
+.Div-footer{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-description{
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+.Div-footer > div {
+    flex: 1;
+}
+.footer-column-2 li,a ,.footer-column-3 li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-column-2 li,.footer-column-3 li{
+    margin-bottom: 25px;
+}
+.footer-column-4{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column-4 img{
+    width: 10%;
+    height: 10%;
 }
 /*--------------------- responsive media query ---------------------------*/
 
@@ -293,7 +327,7 @@
     margin-top: 28px;
     }
     .banner-title{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-top: 28px;
     margin-bottom: 0;
     }
@@ -404,6 +438,7 @@
     background-size:393px 275px;
     width:393px;
     height: 275px;
+    margin-top:0;
 }
 .join-brunch-title{
     font-size: 1.25rem;
@@ -411,7 +446,9 @@
 }
 .email-input{
     width: 218px;
-    border:none ;
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
 }
 .btn-subs{
     padding: 15px 10px;
@@ -423,7 +460,13 @@
 }
 
 
-
+.Div-footer{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
 }
 
