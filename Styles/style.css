@@ -153,7 +153,88 @@
     padding-top: 38px;
     padding-bottom: 38px;
 }
+/* Latest  Deals style */
+.latest-deal{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.deal-content{
+    text-align: center;
+    margin-bottom:100px ;
+}
+.deal-title-Latest{
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.deal-description{
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 400;
+}
 
+.latest-deal-image-container{
+ gap: 28px;
+}
+.deal-card-1{
+    background-image: url("../assets/deal-bloom.png");
+}
+.deal-card-2{
+    background-image: url("../assets/deal-ana.png");
+}
+.deal-card-1,.deal-card-2{
+    color: white;
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: 100%;
+    width: 360px;
+    height: 195px;
+    border-radius: 15px;
+    margin-bottom:28px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+
+.deal-card-1 h3,.deal-card-2 h3,.deal-card-3 h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.deal-card-1 a,.deal-card-2 a,.deal-card-3 a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.deal-card-3{
+    color: white;
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size:752px 418px ;
+    width: 752px;
+    height: 418px;
+    border-radius: 15px;
+    margin-bottom:28px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+.deal-card-3 h3{
+    font-size: 2.5rem;
+}
+.deal-card-3 a{
+    font-size: 1.75rem;
+}
 /*--------------------- responsive media query ---------------------------*/
 
 @media screen and (max-width: 550px){
@@ -257,6 +338,36 @@
      .hide-on-mobile{
         display: none;
      }
+
+
+     .latest-deal-image-container{
+        flex-direction: column;
+     }
+     .deal-card-3{
+        background-size: 100%;
+        width: 360px;
+        height: 195px;
+     }
+
+     .latest-deal-image-container{
+        gap: 0;
+     }
+     .deal-card-3 h3{
+    font-size: 1rem;
+     }
+     .deal-card-3 a{
+    font-size: 1.25rem;
+     }
+     .deal-title-Latest{
+    font-size: 1.5rem;
+}
+.deal-description{
+    font-size: 0.875rem;
+}
+.deal-content{
+    text-align: center;
+    margin-bottom: 50px ;
+}
 
 
 
