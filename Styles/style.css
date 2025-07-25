@@ -235,6 +235,37 @@
 .deal-card-3 a{
     font-size: 1.75rem;
 }
+/* Join brunch style */
+.join-brunch-content{
+    background-image: url("../assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    height: 533px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: white;  
+}
+.join-brunch-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.email-input{
+    width: 640px;
+    height: 50px;
+    margin-right: 0;
+}
+.btn-subs{
+    margin-right: 0;
+}
+.input-form{
+    display: flex;
+}
 /*--------------------- responsive media query ---------------------------*/
 
 @media screen and (max-width: 550px){
@@ -367,6 +398,28 @@
 .deal-content{
     text-align: center;
     margin-bottom: 50px ;
+}
+
+.join-brunch-content{
+    background-size:393px 275px;
+    width:393px;
+    height: 275px;
+}
+.join-brunch-title{
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+.email-input{
+    width: 218px;
+    border:none ;
+}
+.btn-subs{
+    padding: 15px 10px;
+    font-size: 1rem;
+    
+}
+.input-form{
+    display: flex;
 }
 
 
